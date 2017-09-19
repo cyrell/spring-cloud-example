@@ -3,9 +3,11 @@ spring:
     name: edge-service
 
 server:
-  port: 8080
- 
+  port: 9999
+  
 eureka:
   client:
-    region: default
-    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8888/eureka}
+  instance:
+    preferIpAddress: true
