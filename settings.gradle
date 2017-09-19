@@ -1,0 +1,3 @@
+include 'config-service'
+include 'discovery-service'
+include 'edge-service'

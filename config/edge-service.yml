@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: edge-service
+
+server:
+  port: 8080
+ 
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds: 5
